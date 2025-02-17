@@ -22,7 +22,7 @@ public class Throw : MonoBehaviour
     {
         Vector2 pos = transform.position;
 
-        if (Input.GetMouseButtonDown(0) && !isThrowing)
+        if (Input.GetMouseButtonDown(1) && !isThrowing)
         {
             t = 0;
             isThrowing = true;
