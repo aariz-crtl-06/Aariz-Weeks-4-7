@@ -36,6 +36,7 @@ public class Throw : MonoBehaviour
             {
                 t = 1;
                 isThrowing = false;
+
             }
 
             transform.position = Vector2.Lerp(start, end * 1.4f, curve.Evaluate(t));
