@@ -5,8 +5,7 @@ using UnityEngine;
 public class city_movement : MonoBehaviour
 {
 
-    public float speed = 4f;
-    
+    public float speed = 2f;
     
     void Start()
     {
@@ -31,5 +30,10 @@ public class city_movement : MonoBehaviour
             city.x -= speed * Time.deltaTime;
             transform.position = city;
         }
+    }
+
+    public void speedy(float s)
+    {
+        speed = s;
     }
 }
