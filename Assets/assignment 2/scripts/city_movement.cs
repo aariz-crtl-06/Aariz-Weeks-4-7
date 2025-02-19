@@ -13,7 +13,6 @@ public class city_movement : MonoBehaviour
     {
         
     }
-
     
     void Update()
     {
