@@ -18,6 +18,7 @@ public class bird_movement : MonoBehaviour
         spriteRenderer.color = Random.ColorHSV();
     }
 
+
     void Update()
     {
         //vector to take position of bird prefab for manipulation
