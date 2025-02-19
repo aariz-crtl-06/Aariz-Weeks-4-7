@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class spawner_for_bird : MonoBehaviour
 {
+    //Allows for script to utilize bird prefab
     public GameObject bird;
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //If space is pressed, spawn the bird prefab and destroy it after 2 seconds
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            //Creates a game object that references and spawns bird game object to destroy itself
            GameObject newThing = Instantiate(bird);
             Destroy(newThing, 2);
         }
